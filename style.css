@@ -1,22 +1,22 @@
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
     display: none;
 }
-/* header start */
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:#009e5f;
+    background: #009e5f;
     position: fixed;
     width: 100%;
     height: 3.7vw;
@@ -24,33 +24,32 @@ body::-webkit-scrollbar{
 }
 
 
-.header .navbar ul{
+.header .navbar ul {
     display: flex;
     gap: 20px;
     right: 20px;
     list-style: none;
     margin-right: 20px;
+    
 }
-
-.header .navbar a{ 
+.header .navbar li:hover {
+    background-color: #003d23;
+  
+}
+    
+.header .navbar a {
     text-decoration: none;
 }
 
-.images img{
+.images img {
     position: absolute;
-    top:10%;
+    top: 10%;
     height: 7vw;
     left: 2%;
 
 }
 
-
-/* header end */
-
-
-/* body start */
-
-.main{
+.main {
 
     width: 100vw;
     height: 100vh;
@@ -63,7 +62,7 @@ body::-webkit-scrollbar{
     background-color: #fff;
 }
 
-.text-part{
+.text_part {
     height: 100%;
     width: 30vw;
     justify-content: center;
@@ -72,92 +71,105 @@ body::-webkit-scrollbar{
     flex-direction: column;
 }
 
-.video-part{
+.video_part {
     height: 100%;
     width: 70vw;
 }
 
-#video{
+#video {
     width: 100%;
     height: 100%;
 }
 
-.text-part-2{
+.text_part_2 {
     height: fit-content;
     width: fit-content;
     display: inline-block;
-    border: 2px solid #009e5f ;
+    border: 2px solid #009e5f;
     position: relative;
     overflow: hidden;
     margin-top: 20px;
-   
+
 }
-.text-part:hover #exp{ 
+
+.text_part:hover #exp {
     color: #fff;
 }
 
-.text-part-2 h2{
+
+.text_part_2 h2 {
     margin: 5px;
     position: relative;
     z-index: 2;
 }
+.text_part_2 h2:hover {
+    font-size: 2.7vw;
+    transition: all 0.5s ease;
+}
 
-.exp-2{
-   position: absolute;
+.exp {
+    position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
     background-color: #009e5f;
     left: -100%;
     z-index: 1;
-    
+
 }
 
-.text-part:hover .exp-2{
+.text_part:hover .exp {
 
-    left: 0%;
+    font-size: 2.7vw;
+     left: 0%;
     transition: all 0.7s ease;
 }
 
-/* body end */
+
 
 #ice {
     width: 400px;
     height: 400px;
 }
+
 #link {
-    color:#fff;
+    color: #fff;
     font-weight: 700;
 }
-.text-part>h2{
+
+.text_part>h2 {
     font-size: 2vw;
-    color:seagreen;
+    color: seagreen;
     font-weight: 700;
 }
-.next-part{
+
+.next_text_part {
     width: 100%;
     height: 100vh;
     background: url("images/7up-simple-banner.webp");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    z-index:  3;
+    z-index: 3;
 }
-#text{
+
+#text {
     padding-top: 15vw;
     padding-left: 5vw;
 }
-#text h1{
-    color:#fff;
+
+#text h1 {
+    color: #fff;
     font-size: 4vw;
     padding-bottom: 1.5vw;
 }
 
-#text p{
-    color:#fff;
+#text p {
+    color: #fff;
     font-size: 1.5vw;
 }
-.next-part-text-2{
+
+.next_part_text_2 {
     height: fit-content;
     width: fit-content;
     display: inline-block;
@@ -169,13 +181,14 @@ body::-webkit-scrollbar{
     padding: 0.5vw 0vw;
 }
 
-.next-part-text-2 h2{
+.next_part_text_2 h2 {
     margin: 5px;
     position: relative;
     z-index: 2;
     color: #009e5f;
 }
-.next-part-exp-2{
+
+.next_part_exp {
     width: 100%;
     height: 100%;
     background-color: #009e5f;
@@ -183,21 +196,28 @@ body::-webkit-scrollbar{
     top: 0;
     left: -100%;
 }
-.next-part-text-2:hover .next-part-exp-2{
+
+.next_part_text_2:hover .next_part_exp {
     transition: all 0.5s ease;
     left: 0;
 }
-.next-part-text-2:hover #next-part-exp{
+.next_part_text_2 h2:hover {
+    font-size: 2.7vw;
+    transition: all 0.5s ease;
+}
+.next_part_text_2:hover #next_part_exp {
     color: #fff;
 }
-.mocktail{
+
+.Cocktail_Recipes_1 {
     height: 100vh;
     width: 100vw;
     background-size: cover;
     background-position: center;
     position: relative;
 }
-.mocktail>img{
+
+.Cocktail_Recipes_1>img {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -205,37 +225,42 @@ body::-webkit-scrollbar{
     left: 0;
     z-index: 0;
 }
-.mock{
+
+.Cocktail_Recipes_2 {
     height: 100vh;
     width: 100vw;
     position: relative;
     z-index: 2;
 }
-.mock{
+
+.Cocktail_Recipes_2 {
     height: 200vh;
     width: 100vw;
     position: relative;
     z-index: 3;
 }
-#first-img{
+
+#image1 {
     position: sticky;
     height: 100vh;
     width: 100%;
     object-fit: cover;
     top: 0;
 }
-#second-img{
+
+#image2 {
     height: 100vh;
     width: 100%;
     object-fit: cover;
     position: relative;
     z-index: 3;
 }
-.mocktail button{
+
+.Cocktail_Recipes_1 button {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: #FE5887;
     color: #fff;
     font-size: 3vw;
@@ -245,15 +270,17 @@ body::-webkit-scrollbar{
     cursor: pointer;
     z-index: 5;
 }
-.mocktail button:hover{
+
+.Cocktail_Recipes_1 button:hover {
     font-size: 2.7vw;
     transition: all 0.5s ease;
 }
-#btn{
+
+#btn {
     position: absolute;
     top: 25%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: #6BA13F;
     color: #fff;
     font-size: 3vw;
@@ -263,15 +290,17 @@ body::-webkit-scrollbar{
     cursor: pointer;
     z-index: 5;
 }
-#btn:hover{
+
+#btn:hover {
     font-size: 2.7vw;
     transition: all 0.5s ease;
 }
-#btn1{
+
+#btn1 {
     position: absolute;
     top: 80%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: #C064AC;
     color: #fff;
     font-size: 3vw;
@@ -281,11 +310,13 @@ body::-webkit-scrollbar{
     cursor: pointer;
     z-index: 5;
 }
-#btn1:hover{
+
+#btn1:hover {
     font-size: 2.7vw;
     transition: all 0.5s ease;
 }
-#footer{
+
+#footer {
     background: url("https://www.7up.com/images/footer-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -294,19 +325,21 @@ body::-webkit-scrollbar{
     position: relative;
     z-index: 3;
 }
-#footer>img{
+
+#footer>img {
     position: absolute;
     right: 15%;
     height: 23vw;
     width: 30vw;
     top: 20%;
 }
-#footer-part{
+
+#footer-part {
     height: 20vh;
     width: 80vw;
     background: #ffffffcc;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     bottom: 0;
     left: 50%;
     display: flex;
@@ -315,21 +348,25 @@ body::-webkit-scrollbar{
     align-items: center;
     flex-direction: column;
 }
-#link-text{
+
+#footer_text {
     display: flex;
     gap: 2vw;
     margin-bottom: 1.5vw;
     margin-top: 1.5vw;
 }
-#link-text span{
+
+#footer_text span {
     font-size: 1vw;
     color: gray;
 }
-#link-down{
+
+#footer_text_2 {
     font-size: 1vw;
     color: gray;
 }
-#icon{
+
+#icon {
     display: flex;
     gap: 1.5vw;
     justify-content: center;
